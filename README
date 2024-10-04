@@ -1,0 +1,26 @@
+//     Am creat o structura care sa retina matricea pozei, inaltimea, lungimea,
+// tipul si selctia si o structura pentru pixelii pozei color.
+//     In main se citeste de la tastatura comanda care este identificata prin
+// prin conditiile de la if. Daca comanda este LOAD prima data se verifica Daca
+// fisierul exista si poate fi deschis in caz contrar apare mesajul
+// corespunzator. I functia read_file este identificat tipul imaginii, astfel
+// ulterior este apelata functia corespunzatoare acelui tip de poza.
+//     Daca functia citita este SELECT prima data se verifica daca este un
+// fisier incarcat si este apelata functia selectxy care verifica prima data
+// daca parametrii sunt corespunzatori si mai apoi daca sunt in ordinea corecta
+// in final sunt schimbati parametrii de selectie din structura.
+//     Daca comanda este SELECT ALL parametrii de selectie sunt modificati in
+// 0 0 numarul de linii numarul de coloane.
+//     Daca comanda este HISTOGRAM se verifica daca este un fisier incarcat
+// si daca imaginea este alb-negru si ulterior este apelata functia histogram
+// care realizeza histograma conform formulei.
+//     Daca functia citita este EQUALIZE se verifica daca este un fisier
+// incarcat si daca poza este alb negru dupa care se efectueaza egakizarea
+// conform formulei in functia equalize.
+//     Daca functia citita este APPLY se verifica daca este un fisier citit si
+// daca poza este color, iar ulterior se verifica daca a fost primit un
+// parametru corect in functia apply.
+//     Daca comanda citita este CROP se verifica daca este un fisier citit si
+// se apeleaza functia crop ce pastreaza doar portiunea selectata.
+//      Daca functia citita este EXIT se dealoca memoria, se termina while ul
+// si programul.
